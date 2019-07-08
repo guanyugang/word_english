@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mytest.english.word_example">
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/word"
+        android:textSize="20dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp" />
+    <ImageView
+    android:layout_toEndOf="@+id/word"
+    android:id="@+id/bf"
+    android:layout_marginTop="55dp"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/bf"
+    />
+    <ImageView
+        android:layout_toEndOf="@+id/bf"
+        android:id="@+id/sc"
+        android:layout_marginTop="65dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/sc"
+        />
+    <TextView
+        android:layout_width="290dp"
+        android:id="@+id/example"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/word"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/example"
+        android:background="@drawable/add"
+        android:id="@+id/add_work"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <Button
+        android:layout_below="@+id/example"
+        android:layout_toRightOf="@+id/add_work"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/dele"
+        android:text="删除所有例句"/>
+</RelativeLayout>

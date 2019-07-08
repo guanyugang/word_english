@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+	    <FrameLayout
+	        android:id="@+id/content"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1.0" />
+	
+	    <RadioGroup
+	        android:id="@+id/navgroup"
+	        android:background="@drawable/tab_background"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+			android:layout_gravity="bottom"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:paddingTop="5dp"
+	        android:layout_weight="0.0">
+	
+	        <RadioButton
+	            android:id="@+id/radioButton1"
+	            style="@style/tab_item_style"
+	            android:background="@drawable/selector_tab_backgroud"
+	            android:drawableTop="@drawable/selector_tab_1"
+	            android:textColor="@drawable/selector_tab_textcolor"
+				android:textSize="13dp"
+	            android:text="首页" />
+	
+	        <RadioButton
+	            android:id="@+id/radioButton2"
+	            style="@style/tab_item_style"
+	            android:background="@drawable/selector_tab_backgroud"
+	            android:drawableTop="@drawable/selector_tab_2"
+	            android:textColor="@drawable/selector_tab_textcolor"
+				android:textSize="13dp"
+	            android:text="搜索" />
+	
+	        <RadioButton
+	            android:id="@+id/radioButton3"
+	            style="@style/tab_item_style"
+	            android:background="@drawable/selector_tab_backgroud"
+	            android:drawableTop="@drawable/selector_tab_3"
+	            android:textColor="@drawable/selector_tab_textcolor"
+				android:textSize="13dp"
+	            android:text="我的" />
+	
+	        <RadioButton
+	            android:id="@+id/radioButton4"
+	            style="@style/tab_item_style"
+	            android:background="@drawable/selector_tab_backgroud"
+	            android:drawableTop="@drawable/selector_tab_4"
+	            android:textColor="@drawable/selector_tab_textcolor"
+				android:textSize="13dp"
+	            android:text="收藏" />
+	
+	    </RadioGroup>
+    
+</LinearLayout>

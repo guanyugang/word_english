@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mytest.english.word">
+
+    <EditText
+        android:id="@id/word"
+        android:text=""
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        android:layout_width="60dp"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/wordtranslationl"
+        android:layout_toRightOf="@+id/word"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text=""
+        android:layout_width="60dp"
+        android:layout_height="40dp" />
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/wordtranslationl"
+        android:layout_marginTop="5dp"
+        android:id="@+id/add"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/add"/>
+<ListView
+    android:layout_below="@+id/word"
+    android:id="@+id/word_lt"
+
+
+    android:cacheColorHint="#00000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ListView>
+</RelativeLayout>
